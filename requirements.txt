@@ -1,0 +1,11 @@
+# numpy
+# os
+pandas
+matplotlib
+librosa
+tqdm
+scikit-learn
+tensorflow
+audiomentations
+# random
+streamlit
