@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import tempfile
 import os
+from pathlib import Path
 import librosa
 import tensorflow as tf
 
@@ -10,7 +11,7 @@ DURATION = 3
 TIME_STEPS = 3
 FRAME_PER_STEP = 60
 N_MELS = 128
-MODEL = "MardeusNet.keras"  # Change model path if needed
+MODEL = Path(__file__).resolve().parents[1] / "models" / "MardeusNet.keras"
 class_names = ['angry', 'disgust', 'fearful', 'happy', 'neutral', 'sad', 'surprised']
 
 class FocalLoss(tf.keras.losses.Loss):
