@@ -1,3 +1,4 @@
+![Speech Emotion Recognition cover](images/01-speech-emotion-recognition-cover.png)
 # DPL302m Final Report & Group Presentation (SU25)
 
 ## 1. Tổng quan
