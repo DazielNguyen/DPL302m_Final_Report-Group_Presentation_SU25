@@ -1,10 +1,13 @@
 ![Speech Emotion Recognition cover](images/01-speech-emotion-recognition-cover.png)
+
 # DPL302m Final Report & Group Presentation (SU25)
 
-## 1. Tổng quan
-Dự án này xây dựng mô hình nhận diện cảm xúc từ giọng nói (Speech Emotion Recognition) bằng deep learning, sử dụng TensorFlow/Keras và các thư viện xử lý âm thanh.
+## 1. Overview
 
-## 2. Cấu trúc thư mục
+This project develops a deep learning model for Speech Emotion Recognition using TensorFlow/Keras and audio processing libraries.
+
+## 2. Project Structure
+
 ```text
 DPL302m_Final_Report&Group_Presentation_SU25/
 ├── README.md
@@ -25,33 +28,39 @@ DPL302m_Final_Report&Group_Presentation_SU25/
     └── pyvenv.cfg
 ```
 
-## 3. Mô tả thành phần
-- `requirements.txt`: Danh sách thư viện Python cần cài đặt.
-- `src/app.py`: File chạy ứng dụng hoặc suy luận mô hình.
-- `notebooks/training_model.ipynb`: Notebook huấn luyện, đánh giá và trực quan hóa.
-- `models/MardeusNet.keras`: Trọng số/mô hình đã lưu.
-- `reports/`: Tài liệu báo cáo và slide trình bày.
-- `dpl-env/`: Môi trường ảo Python cục bộ của dự án.
+## 3. Component Description
 
-## 4. Thiết lập môi trường
+- `requirements.txt`: List of required Python packages.
+- `src/app.py`: Application entry point for running model inference.
+- `notebooks/training_model.ipynb`: Notebook for model training, evaluation, and visualization.
+- `models/MardeusNet.keras`: Saved model and trained weights.
+- `reports/`: Final report and group presentation slides.
+- `dpl-env/`: Local Python virtual environment.
+
+## 4. Environment Setup
+
 ```bash
 python3 -m venv dpl-env
 source dpl-env/bin/activate
 pip install -r requirements.txt
 ```
 
-## 5. Cách chạy
-### Chạy ứng dụng
+## 5. Usage
+
+### Run the Application
+
 ```bash
 streamlit run src/app.py
 ```
 
-### Mở notebook huấn luyện
+### Open the Training Notebook
+
 ```bash
 jupyter notebook notebooks/training_model.ipynb
 ```
 
-## 6. Ghi chú quản lý dự án
-- Nên giữ môi trường ảo (`dpl-env`) ngoài version control.
-- Nếu làm việc nhóm, ưu tiên cập nhật `requirements.txt` khi thêm thư viện.
-- Không chỉnh sửa trực tiếp file mô hình `.keras` khi không cần thiết.
+## 6. Project Maintenance Notes
+
+- Keep the virtual environment (`dpl-env`) out of version control.
+- When working in a team, update `requirements.txt` whenever a dependency is added.
+- Avoid modifying the `.keras` model file directly unless necessary.
